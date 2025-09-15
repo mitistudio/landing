@@ -6,7 +6,7 @@
   <title>MiTi.Studio</title>
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="miti.png"> <!-- Replace logo.png with your logo file -->
+  <link rel="icon" type="image/png" href="miti.png"> 
   
   <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
   <style>
@@ -23,10 +23,10 @@
     .logo img {
       width: 160px;
       height: 160px;
-      border-radius: 80px; /* optional */
+      border-radius: 80px;
     }
     .tagline {
-      font-size: 3em;  /* bigger now */
+      font-size: 2.5em;
       font-weight: regular;
       color: #ffffff;
       margin: 20px 0 30px 0;
@@ -40,10 +40,38 @@
       max-width: 700px;
       margin: auto;
     }
+    .content a {
+      color: #fff200;
+      text-decoration: none;
+    }  
     .footer {
       margin-top: 40px;
       font-size: 0.9em;
       color: #bbb;
+    }
+    .featured-art {
+      max-width: 740px;
+      margin: 40px auto;
+      position: relative;
+      border: 1px solid #ffffff;
+    }
+    .featured-art img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+    }
+    .caption {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #111;
+      color: #878787;
+      padding: 5px 0px 5px 0px;
+      font-size: 10px;
+      text-align: center;
+      font-style: normal;
     }
     .footer a {
       color: #fff200;
@@ -77,8 +105,8 @@
   </div>
 
   <!-- Tagline with language -->
-  <div id="tagline-en" class="tagline">We design for the sake of humanity</div>
-  <div id="tagline-de" class="tagline" style="display:none;">Wir gestalten im Dienste der Menschlichkeit</div>
+  <div id="tagline-en" class="tagline">Handcrafted Design </br>for Real Stories</div>
+  <div id="tagline-de" class="tagline" style="display:none;">Handgemachtes Design </br>für echte Geschichten</div>
 
   <div class="divider">─── ✦ ───</div>
 
@@ -90,26 +118,30 @@
 
   <!-- Content -->
   <div class="content" id="text-en">
-    <p>We are a small design studio based in Baden-Württemberg, Germany. 
-    Our focus is on <strong>human-generated, original designs</strong> in an era dominated by AI. 
-    We provide design services such as illustration, typography, and logo design, 
-    and also sell our digital design elements on platforms like Etsy.</p>
+    <p>At MiTi Studio, we believe design should tell real stories. Based in Baden-Württemberg, Germany, we create <strong>handcrafted, original design work</strong> in an era dominated by AI and endless templates.</p> 
+    <p>From illustrations and typography to logos and visual identities, our work is made with care — for people, for meaning, and for lasting impact.</p> 
+    <p>In addition to our client services, we also share and sell our creative design elements worldwide through <a href="https://www.etsy.com/shop/YOURSHOPNAME" target="_blank">Etsy</a>.</p>
   </div>
 
   <div class="content" id="text-de" style="display:none;">
-    <p>Wir sind ein kleines Designstudio mit Sitz in Baden-Württemberg, Deutschland. 
-    Unser Fokus liegt auf <strong>menschlich erzeugten, originellen Designs</strong> in einer von KI dominierten Zeit. 
-    Wir bieten Designleistungen wie Illustration, Typografie und Logodesign an 
-    und verkaufen unsere digitalen Designelemente auch auf Plattformen wie Etsy.</p>
+    <p>Bei MiTi Studio glauben wir, dass Design echte Geschichten erzählen soll. Mit Sitz in Baden-Württemberg, Deutschland, schaffen wir <strong>handgemachte, originelle Designs</strong> in einer Zeit, die von KI und unzähligen Vorlagen geprägt ist.</p> 
+    <p>Von Illustrationen und Typografie bis hin zu Logos und visuellen Identitäten – unsere Arbeit entsteht mit Sorgfalt, für Menschen, für Bedeutung und für nachhaltige Wirkung.</p> 
+    <p>Neben unseren Dienstleistungen bieten wir unsere kreativen Designelemente auch weltweit über <a href="https://www.etsy.com/shop/YOURSHOPNAME" target="_blank">Etsy</a> an.</p>
+  </div>
+
+  <!-- Featured Artwork -->
+  <div class="featured-art">
+    <img src="the-wise-donkey.jpg" alt="The Wise Donkey"> <!-- Replace with your artwork -->
+    <div class="caption">Recent Work: Crafted with empathy and human touch.</div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
     <p>
-      <a href="#">Dribbble</a> |
-      <a href="#">Behance</a> |
-      <a href="#">Instagram</a> |
-      <a href="#">LinkedIn</a>
+      <a href="https://dribbble.com/miti-studio" target="_blank">Dribbble</a> |
+      <a href="#" target="_blank">Behance</a> |
+      <a href="#" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/company/mitistudio" target="_blank">LinkedIn</a>
     </p>
     <p>© 2025 MiTi.Studio. All rights reserved.</p>
   </div>
