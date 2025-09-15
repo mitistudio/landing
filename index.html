@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MiTi.Studio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="miti.png"> <!-- Replace logo.png with your logo file -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
   <style>
     body {
@@ -11,90 +15,123 @@
       color: #ffffff;
       font-family: "Courier New", Courier, monospace;
       text-align: center;
-      padding: 60px 20px;
-      line-height: 1.6;
+      padding: 40px 20px;
     }
-    h1 {
-      font-family: "Ultra", serif;
-      font-size: 3em;
-      color: #ed0f68;
-      letter-spacing: 1px;
+    .logo {
+      margin-bottom: 15px;
     }
-    h2 {
-      font-size: 1.3em;
-      margin-top: 40px;
-      color: #fff200;
+    .logo img {
+      width: 160px;
+      height: 160px;
+      border-radius: 80px; /* optional */
     }
-    p {
-      max-width: 700px;
-      margin: 15px auto;
-    }
-    a {
-      color: #ed0f68;
-      text-decoration: none;
-      border-bottom: 1px dashed #ed0f68;
-    }
-    a:hover {
-      color: #fff200;
-      border-bottom-color: #fff200;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-    .social-links {
-      margin: 15px 0;
-    }
-    .social-links a {
-      margin: 0 10px;
-      color: #fff200;
-      text-decoration: none;
+    .tagline {
+      font-size: 2em;  /* bigger now */
       font-weight: bold;
-    }
-    .social-links a:hover {
       color: #ed0f68;
+      margin: 20px 0 30px 0;
+      font-family: "Ultra", serif;
+    }
+    .divider {
+      color: #fff200;
+      margin: 15px 0 30px 0;
+    }
+    .content {
+      max-width: 700px;
+      margin: auto;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+    .footer a {
+      color: #fff200;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .lang-toggle {
+      margin: 10px 0 20px 0;
+    }
+    .lang-toggle button {
+      background: none;
+      border: 1px solid #fff200;
+      padding: 5px 10px;
+      font-size: 0.85em;
+      color: #fff200;
+      cursor: pointer;
+      border-radius: 3px;
+      margin: 0 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .lang-toggle button:hover {
+      background: #fff200;
+      color: #111;
     }
   </style>
 </head>
 <body>
-  <h1>MiTi.Studio</h1>
-  <p>A small design studio in Reutlingen, Germany.</p>
+  <!-- Logo placeholder -->
+  <div class="logo">
+    <img src="miti.png" alt="MiTi.Studio"> <!-- Replace logo.png with your file -->
+  </div>
 
-  <p>
-    In an era where AI generates endless templates, we believe in the 
-    power of <strong>human-created, original design</strong>.  
-    Our work carries empathy, creativity, and stories that algorithms cannot replicate.
-  </p>
+  <!-- Tagline with language -->
+  <div id="tagline-en" class="tagline">We design for the sake of humanity</div>
+  <div id="tagline-de" class="tagline" style="display:none;">Wir gestalten im Dienste der Menschlichkeit</div>
 
-  <h2>What We Do</h2>
-  <p>
-    ✦ Illustration <br>
-    ✦ Typography <br>
-    ✦ Logo Design <br>
-    ✦ Simple visual identities
-  </p>
+  <div class="divider">─── ✦ ───</div>
 
-  <h2>Shop</h2>
-  <p>
-    We also create digital design elements available on 
-    <a href="https://www.etsy.com/" target="_blank">Etsy</a>.
-  </p>
+  <!-- Language Toggle -->
+  <div class="lang-toggle">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('de')">DE</button>
+  </div>
 
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:hello@miti.studio">hello@miti.studio</a>
-  </p>
+  <!-- Content -->
+  <div class="content" id="text-en">
+    <p>We are a small design studio based in Baden-Württemberg, Germany. 
+    Our focus is on <strong>human-generated, original designs</strong> in an era dominated by AI. 
+    We provide design services such as illustration, typography, and logo design, 
+    and also sell our digital design elements on platforms like Etsy.</p>
+  </div>
 
-  <footer>
-    <div class="social-links">
-      <a href="https://dribbble.com" target="_blank">Dribbble</a> |
-      <a href="https://behance.net" target="_blank">Behance</a> |
-      <a href="https://instagram.com" target="_blank">Instagram</a> |
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </div>
-    <p>© 2025 MiTi Studio – All Rights Reserved.<br>
-    Proprietary content – Do not copy, reuse, or redistribute without written permission.</p>
-  </footer>
+  <div class="content" id="text-de" style="display:none;">
+    <p>Wir sind ein kleines Designstudio mit Sitz in Baden-Württemberg, Deutschland. 
+    Unser Fokus liegt auf <strong>menschlich erzeugten, originellen Designs</strong> in einer von KI dominierten Zeit. 
+    Wir bieten Designleistungen wie Illustration, Typografie und Logodesign an 
+    und verkaufen unsere digitalen Designelemente auch auf Plattformen wie Etsy.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>
+      <a href="#">Dribbble</a> |
+      <a href="#">Behance</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a>
+    </p>
+    <p>© 2025 MiTi.Studio. All rights reserved.</p>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      // Switch text content
+      document.getElementById('text-en').style.display = (lang === 'en') ? 'block' : 'none';
+      document.getElementById('text-de').style.display = (lang === 'de') ? 'block' : 'none';
+      // Switch tagline
+      document.getElementById('tagline-en').style.display = (lang === 'en') ? 'block' : 'none';
+      document.getElementById('tagline-de').style.display = (lang === 'de') ? 'block' : 'none';
+    }
+  </script>
+
+  <!-- Google Analytics (replace with your own GA code) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXXXXXX-X');
+  </script>
 </body>
 </html>
