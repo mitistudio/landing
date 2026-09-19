@@ -1,187 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MiTi.Studio: Handcrafted Design from Germany</title>
-  <meta name="description" content="MiTi.Studio is a small design studio in Baden-Württemberg, Germany, creating handcrafted logos, illustrations, and digital assets. Human-centered, authentic, and available on Etsy." />
-  <meta name="keywords" content="MiTi.Studio, handcrafted design Germany, logo design, typography, illustration, Etsy design assets, human-centered design, Baden-Württemberg design studio" />
-
-  <!-- Social sharing (Open Graph) -->
-  <meta property="og:title" content="MiTi.Studio: Handcrafted Design from Germany" />
-  <meta property="og:description" content="We create original, human-centered designs with empathy and authenticity. Logos, illustrations, typography, and creative assets—crafted with care in Germany." />
-  <meta property="og:image" content="Miti_SocialCard.jpg" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter sharing -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MiTi.Studio: Handcrafted Design from Germany" />
-  <meta name="twitter:description" content="Handcrafted logos, illustrations, and creative assets—made with empathy, culture, and real stories." />
-  <meta name="twitter:image" content="Miti_SocialCard.jpg" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="miti.png"> 
-  
-  <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #111;
-      color: #ffffff;
-      font-family: "Courier New", Courier, monospace;
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .logo {
-      margin-bottom: 15px;
-    }
-    .logo img {
-      width: 160px;
-      height: 160px;
-      border-radius: 80px;
-    }
-    .tagline {
-      font-size: 2.5em;
-      font-weight: regular;
-      color: #ffffff;
-      margin: 20px 0 30px 0;
-      font-family: "Ultra", serif;
-    }
-    .divider {
-      color: #fff200;
-      margin: 15px 0 30px 0;
-    }
-    .content {
-      max-width: 700px;
-      margin: auto;
-    }
-    .content a {
-      color: #fff200;
-      text-decoration: none;
-    }  
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #bbb;
-    }
-    .featured-art {
-      max-width: 740px;
-      margin: 40px auto;
-      position: relative;
-      border: 1px dashed; #fff200;
-      border-radius: 2px;
-    }
-    .featured-art img {
-      width: 100%;
-      aspect-ratio: 16/9;
-      object-fit: cover;
-      display: block;
-    }
-    .caption {
-      position: relative;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: #111;
-      color: #878787;
-      padding: 5px 0px 5px 0px;
-      font-size: 10px;
-      text-align: center;
-      font-style: normal;
-    }
-    .footer a {
-      color: #fff200;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .lang-toggle {
-      margin: 10px 0 20px 0;
-    }
-    .lang-toggle button {
-      background: none;
-      border: 1px solid #fff200;
-      padding: 5px 10px;
-      font-size: 0.85em;
-      color: #fff200;
-      cursor: pointer;
-      border-radius: 3px;
-      margin: 0 4px;
-      transition: background 0.2s, color 0.2s;
-    }
-    .lang-toggle button:hover {
-      background: #fff200;
-      color: #111;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiTi Studio · small design studio in Baden-Württemberg</title>
+<meta name="description" content="Family-run design studio in Baden-Württemberg, Germany. Brand identity, product design, design systems, type and illustration. We work in English and German. Senior work at small studio rates.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://miti.studio/">
+<link rel="alternate" hreflang="de" href="https://miti.studio/de/">
+<link rel="alternate" hreflang="en" href="https://miti.studio/">
+<link rel="alternate" hreflang="x-default" href="https://miti.studio/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MiTi Studio">
+<meta property="og:locale" content="en">
+<meta property="og:locale:alternate" content="de">
+<meta property="og:title" content="MiTi Studio · small design studio in Baden-Württemberg">
+<meta property="og:description" content="Family-run design studio in Baden-Württemberg, Germany. Brand identity, product design, design systems, type and illustration. We work in English and German. Senior work at small studio rates.">
+<meta property="og:url" content="https://miti.studio/">
+<meta property="og:image" content="https://miti.studio/assets/miti-social.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MiTi Studio · small design studio in Baden-Württemberg">
+<meta name="twitter:description" content="Family-run design studio in Baden-Württemberg, Germany. Brand identity, product design, design systems, type and illustration. We work in English and German. Senior work at small studio rates.">
+<meta name="twitter:image" content="https://miti.studio/assets/miti-social.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://miti.studio/#studio",
+  "name": "MiTi Studio",
+  "url": "https://miti.studio/",
+  "description": "Family-run design studio in Baden-Württemberg, Germany. Brand identity, product design, design systems, custom type and illustration, in English and German.",
+  "address": { "@type": "PostalAddress", "addressRegion": "Baden-Württemberg", "addressCountry": "DE" },
+  "areaServed": [ { "@type": "Country", "name": "Germany" }, { "@type": "Place", "name": "Worldwide" } ],
+  "availableLanguage": [ "en", "de" ],
+  "email": "hello@miti.studio",
+  "priceRange": "$",
+  "founder": { "@type": "Person", "name": "MiTi Studio founder and creative director" },
+  "knowsLanguage": [ "en", "de" ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand identity design" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "UX/UI product design" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Design systems" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom font design" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom illustration" } }
+  ]
+}
+</script>
+<link rel="stylesheet" href="_ds/miti-design-system-6b04a300-a503-4302-aa47-b4d9627b627f/styles.css">
+<link rel="stylesheet" href="site.css">
+<script src="site.js"></script>
 </head>
-<body>
-  <!-- Logo placeholder -->
-  <div class="logo">
-    <img src="miti.png" alt="MiTi.Studio"> <!-- Replace logo.png with your file -->
+<body style="margin:0; background:var(--color-bg);">
+<div class="page">
+
+<div style="position:relative;">
+<nav class="nav" style="padding-inline: clamp(32px,5cqw,72px); padding-block: 32px 16px; border-bottom: none; align-items: center;">
+  <div style="display:flex; align-items:center; gap:clamp(10px, 2cqw, 16px); flex:none;">
+    <a href="index.html" aria-label="MiTi Studio, home" style="display:block; width:clamp(80px, calc(62px + 4.5cqw), 120px); height:clamp(80px, calc(62px + 4.5cqw), 120px); flex:none;">
+      <div style="width:100%; height:100%; border-radius:50%; overflow:hidden; box-shadow:var(--shadow-lg); background:var(--color-accent);">
+        <img src="assets/miti-logo.png" alt="MiTi Studio" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </a>
   </div>
-
-  <!-- Tagline with language -->
-  <div id="tagline-en" class="tagline">Design with soul, </br>made for you.</div>
-  <div id="tagline-de" class="tagline" style="display:none;">Design mit Seele, </br>für dich gemacht.</div>
-
-  <div class="divider">─── ✦ ───</div>
-
-  <!-- Language Toggle -->
-  <div class="lang-toggle">
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('de')">DE</button>
+  <span style="margin-right:auto;"></span>
+  <div style="position:relative;">
+    <button type="button" id="hamburger-btn" aria-label="Menu" aria-expanded="false" style="width:40px; height:40px; display:flex; align-items:center; justify-content:center; background:transparent; border:none; cursor:pointer; color:var(--color-text); border-radius:var(--radius-sm); flex:none;">
+      <svg id="icon-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      <svg id="icon-closed" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+    </button>
+    <div id="nav-menu" style="display:none; position:absolute; top:calc(100% + 8px); right:0; background:var(--color-bg); box-shadow:var(--shadow-lg); min-width:240px; z-index:100;"></div>
   </div>
+</nav>
+<div id="nav-overlay" style="display:none; position:fixed; inset:0; z-index:90; background:transparent;"></div>
+</div>
 
-  <!-- Content -->
-  <div class="content" id="text-en">
-    <p>At MiTi.Studio, we believe design should stay human. In a time when AI creates countless templates, we focus on handcrafted, original work that carries empathy, culture, and real stories. Based in Baden-Württemberg, Germany, our small studio offers logo design, typography, illustrations, and creative assets for individuals and small businesses.</p> 
-    <p>Every project is crafted with care and authenticity. Alongside client work, we also share our creativity through digital products — icons, illustrations, and templates — on platforms like <a href="https://www.etsy.com/de-en/shop/MiTiStudioDE" target="_blank">Etsy</a>.</p>
-    <p>As parents of a nonverbal child, we understand how powerful communication beyond words can be. This perspective inspires us to design with empathy, inclusivity, and a human touch.</p>
-    <p><b>If you seek something unique and personal, <a href="mailto:to.miti.studio@gmail.com" target="_blank">MiTi.Studio</a> is here to create designs with love, creativity, and meaning.</b></p> 
+<section style="padding: clamp(48px,10cqw,112px) clamp(32px,5cqw,72px) clamp(36px,7cqw,72px); position:relative; display:flex; align-items:flex-end; justify-content:space-between; gap:clamp(24px,5cqw,64px); flex-wrap:wrap;">
+  <div style="flex:1 1 420px; max-width:min(830px, 700px); position:relative; z-index:1;">
+    <h1 id="t-heroLine1" style="font-family:var(--font-heading); font-weight:700; font-size:clamp(38px,7cqw,80px); line-height:1.2; letter-spacing:-0.02em; margin:0;"></h1>
+    <p id="t-heroSub" style="font-family:var(--font-secondary); font-size:18px; line-height:1.5; max-width:58ch; margin:28px 0 0; color:color-mix(in srgb, var(--color-text) 82%, transparent);"></p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:28px;">
+      <a href="contact.html" id="t-ctaStart" class="btn btn-secondary" style="color:var(--color-text);"></a>
+    </div>
   </div>
+  <img src="assets/miti-hero.png" alt="" aria-hidden="true" class="hero-drawing" style="display:block; width:clamp(300px, 44cqw, 672px); height:auto; aspect-ratio:1036/946; position:absolute; right:clamp(32px,5cqw,72px); bottom:-36px; z-index:0; pointer-events:none;">
+</section>
 
-  <div class="content" id="text-de" style="display:none;">
-    <p>Bei MiTi.Studio glauben wir: Design soll menschlich bleiben. In einer Zeit, in der KI viele Vorlagen erstellt, machen wir Handarbeit. Unsere Designs sind echt, klar und erzählen Geschichten. Wir sind ein kleines Studio in Baden-Württemberg. Wir gestalten Logos, Typografie, Illustrationen und kreative Elemente für Einzelpersonen und kleine Firmen.</p> 
-    <p>Jedes Projekt entsteht mit Sorgfalt und Originalität. Zusätzlich verkaufen wir digitale Produkte wie Icons, Illustrationen und Vorlagen auf <a href="https://www.etsy.com/de-en/shop/MiTiStudioDE" target="_blank">Etsy</a>.</p>
-    <p>Als Eltern eines nichtsprechenden Kindes wissen wir, wie wichtig Kommunikation ohne Worte ist. Diese Erfahrung gibt unseren Arbeiten Herz, Empathie und Menschlichkeit.</p>
-    <p><b>Wenn Sie etwas Persönliches und Besonderes suchen, ist <a href="mailto:to.miti.studio@gmail.com" target="_blank">MiTi.Studio</a> für Sie da – mit Liebe, Kreativität und echter Handarbeit.</b></p> 
+<div style="padding-inline: clamp(32px,5cqw,72px);"><hr class="hr" style="margin:0;"></div>
+
+<section style="padding: clamp(28px,6cqw,52px) clamp(32px,5cqw,72px);">
+  <div class="pos-row">
+    <div>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block; margin:0 0 14px;"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg>
+      <p id="t-pos1" style="font-size:15.5px; line-height:1.6; margin:0; max-width:30ch; color:color-mix(in srgb, var(--color-text) 75%, transparent);"></p>
+    </div>
+    <div>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block; margin:0 0 14px;"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
+      <p id="t-pos2" style="font-size:15.5px; line-height:1.6; margin:0; max-width:30ch; color:color-mix(in srgb, var(--color-text) 75%, transparent);"></p>
+    </div>
+    <div>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block; margin:0 0 14px;"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+      <p id="t-pos3" style="font-size:15.5px; line-height:1.6; margin:0; max-width:30ch; color:color-mix(in srgb, var(--color-text) 75%, transparent);"></p>
+    </div>
+    <div>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block; margin:0 0 14px;"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <p id="t-pos4" style="font-size:15.5px; line-height:1.6; margin:0; max-width:30ch; color:color-mix(in srgb, var(--color-text) 75%, transparent);"></p>
+    </div>
   </div>
+</section>
 
-  <!-- Featured Artwork -->
-  <div class="featured-art">
-    <img src="MiTi_Wall.jpg" alt="The Wise Donkey"> <!-- Replace with your artwork -->
-    <div class="caption">A drawing from our wall, drawn by the kids.</div>
+<div style="padding-inline: clamp(32px,5cqw,72px);"><hr class="hr" style="margin:0;"></div>
+
+<section style="padding: clamp(40px,7cqw,72px) clamp(32px,5cqw,72px);">
+  <span id="t-featuresKicker" style="display:block; font-family:var(--font-secondary); font-size:12px; font-weight:600; letter-spacing:0.05em; color:var(--color-accent-700); margin:0 0 24px;"></span>
+  <div id="features-list"></div>
+</section>
+
+<section style="padding: clamp(36px,7cqw,72px) clamp(32px,5cqw,72px); display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:clamp(28px,5cqw,56px); align-items:center;">
+  <div>
+    <span id="t-aiKicker" style="display:block; font-family:var(--font-secondary); font-size:12px; font-weight:600; letter-spacing:0.05em; color:var(--color-accent-700); margin:0 0 16px;"></span>
+    <h2 id="t-aiTitle" style="font-family:var(--font-heading); font-weight:700; font-size:clamp(26px,3.2cqw,38px); line-height:1.25; letter-spacing:-0.015em; margin:0 0 16px;"></h2>
+    <p id="t-aiCopy" style="font-size:15.5px; line-height:1.65; max-width:48ch; color:color-mix(in srgb, var(--color-text) 78%, transparent); margin:0;"></p>
   </div>
+  <figure style="margin:0; display:flex; justify-content:center;">
+    <img src="assets/miti-process-drawing.png" id="t-aiImage" alt="" style="display:block; width:clamp(220px, 26cqw, 380px); height:auto; aspect-ratio:1643/2059;">
+  </figure>
+</section>
 
-  <!-- Footer -->
-  <div class="footer">
-    <p>
-      <a href="https://dribbble.com/miti-studio" target="_blank">Dribbble</a> |
-      <a href="https://www.etsy.com/de-en/shop/MiTiStudioDE" target="_blank">Etsy</a> |
-      <a href="https://www.linkedin.com/company/mitistudio" target="_blank">LinkedIn</a>
-    </p>
-    <p>© 2025 MiTi.Studio. All rights reserved.</p>
+<div style="padding-inline: clamp(32px,5cqw,72px);"><hr class="hr" style="margin:0;"></div>
+
+<section style="padding: clamp(40px,6cqw,72px) clamp(32px,5cqw,72px); display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:clamp(24px,5cqw,48px); align-items:center;">
+  <div>
+    <p id="t-closeCopy" style="font-family:var(--font-secondary); font-size:18px; line-height:1.5; max-width:46ch; margin:16px 0 0; color:color-mix(in srgb, var(--color-text) 82%, transparent);"></p>
+    <div style="margin-top:24px;">
+      <a href="contact.html" id="t-closeCta" class="btn btn-secondary" style="color:var(--color-text);"></a>
+    </div>
   </div>
+  <img src="assets/miti-connect.png" alt="" aria-hidden="true" style="display:block; width:118%; height:auto; aspect-ratio:1959/941; margin-block:-56px; position:relative; z-index:1; justify-self:center;">
+</section>
 
-  <script>
-    function setLang(lang) {
-      // Switch text content
-      document.getElementById('text-en').style.display = (lang === 'en') ? 'block' : 'none';
-      document.getElementById('text-de').style.display = (lang === 'de') ? 'block' : 'none';
-      // Switch tagline
-      document.getElementById('tagline-en').style.display = (lang === 'en') ? 'block' : 'none';
-      document.getElementById('tagline-de').style.display = (lang === 'de') ? 'block' : 'none';
-    }
-  </script>
+<div style="padding-inline: clamp(32px,5cqw,72px);"><hr class="hr" style="margin:0;"></div>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G38949QMGW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<div style="padding: clamp(20px,3cqw,28px) clamp(32px,5cqw,72px); display:flex; align-items:center; gap:12px;">
+  <button type="button" id="lang-en" style="background:transparent; border:none; padding:0; cursor:pointer; font-family:var(--font-body); font-size:14px; text-decoration-thickness:2px; text-decoration-color:var(--color-accent); text-underline-offset:4px;">English</button>
+  <span aria-hidden="true" style="color:color-mix(in srgb, var(--color-text) 35%, transparent);">/</span>
+  <button type="button" id="lang-de" style="background:transparent; border:none; padding:0; cursor:pointer; font-family:var(--font-body); font-size:14px; text-decoration-thickness:2px; text-decoration-color:var(--color-accent); text-underline-offset:4px;">Deutsch</button>
+  <div style="margin-left:auto; display:flex; gap:16px; flex-wrap:wrap; font-size:13px; color:color-mix(in srgb, var(--color-text) 70%, transparent);">
+    <a href="legal.html#impressum" id="t-legalImprint" style="color:inherit;"></a>
+    <a href="legal.html#datenschutz" id="t-legalPrivacy" style="color:inherit;"></a>
+  </div>
+</div>
 
-    gtag('config', 'G-G38949QMGW');
-  </script>
+<footer style="padding: clamp(32px,4cqw,40px) clamp(32px,5cqw,72px); display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:13px; color:color-mix(in srgb, var(--color-text) 70%, transparent);">
+  <span id="t-footerLine"></span>
+  <div style="display:flex; gap:16px;">
+    <a href="https://www.facebook.com/profile.php?id=61582376182090" style="color:inherit;">Facebook</a>
+    <a href="https://mitistudiode.etsy.com" style="color:inherit;">Etsy</a>
+    <a href="https://www.linkedin.com/company/mitistudio" style="color:inherit;">LinkedIn</a>
+  </div>
+</footer>
 
+<div id="cookie-banner" style="display:none; position:fixed; left:0; right:0; bottom:0; z-index:300; background:var(--color-bg); border-top:2px solid var(--color-text); box-shadow:var(--shadow-lg);">
+  <div style="max-width:1280px; margin:0 auto; padding:20px clamp(32px,5cqw,72px); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+    <p id="cookie-text" style="margin:0; font-size:14px; max-width:52ch; color:var(--color-text);"></p>
+    <div style="display:flex; gap:12px; flex-wrap:wrap; flex:none;">
+      <button type="button" class="btn btn-secondary" id="cookie-decline"></button>
+      <button type="button" class="btn btn-secondary" id="cookie-accept"></button>
+    </div>
+  </div>
+</div>
+<button type="button" id="cookie-settings-tab" aria-label="Cookie settings" title="Cookie settings" style="display:none; position:fixed; left:20px; bottom:20px; z-index:250; background:transparent; border:none; width:44px; height:44px; align-items:center; justify-content:center; cursor:pointer; color:color-mix(in srgb, var(--color-text) 55%, transparent);">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path><path d="M8.5 8.5v.01"></path><path d="M16 15.5v.01"></path><path d="M12 12v.01"></path><path d="M11 17v.01"></path><path d="M7 14v.01"></path></svg>
+</button>
+
+</div>
+<script>
+var STR = {
+  en: {
+    heroLine1: 'Human-made design for brands and digital products',
+    heroSub: 'MiTi Studio is an independent design practice based in Baden-Württemberg. We build scalable design systems, digital products, and brand identities for growing businesses.',
+    ctaStart: 'Write to us',
+    featuresKicker: 'What we do',
+    aiKicker: 'How we work', aiTitle: 'Research first, then design.',
+    aiCopy: 'Every project starts with questions about your audience and your market. We sketch, we design, and we argue the decisions through until they hold. You see the reasoning behind each one, not just the result.',
+    aiImageAlt: 'A hand-drawn sketch of a tree, part of the studio\'s process work',
+    closeCopy: 'Tell us what you need and when you need it. We answer within two working days.', closeCta: 'Write to us',
+    footerLine: '© 2026 MiTi Studio · Baden-Württemberg, Germany',
+    legalImprint: 'Impressum', legalPrivacy: 'Privacy',
+    pos: [
+      'Original artwork, illustration and interfaces, crafted entirely by hand. Authentic, soulful design, drawn in the studio.',
+      'Structured design frameworks built with a technical, engineering mindset. Scalable UI kits and design systems, ready for production.',
+      'An independent, family-run studio working directly with you. Straight to the founder, with no agency fluff in between.',
+      'Rooted in Baden-Württemberg, with an international design perspective. We help local businesses in Germany meet global standards.',
+    ],
+    features: [
+      { num: '01', title: 'Brand identity design', copy: 'We craft complete visual identities that make your business stand out. From distinctive logos to color systems, we build cohesive looks that connect with your audience.' },
+      { num: '02', title: 'UX/UI product design', copy: 'We design intuitive web and mobile interfaces focused on the user. We transform complex digital ideas into clean, functional products that are easy to navigate.' },
+      { num: '03', title: 'Design systems', copy: 'We build reusable UI libraries and component collections for growing teams. Our scalable systems maintain visual consistency while accelerating product development.' },
+      { num: '04', title: 'Custom font design', copy: 'We create bespoke typefaces tailored to your specific brand voice. From unique display fonts to full font families, we deliver retail quality typography.' },
+      { num: '05', title: 'Custom illustration', copy: 'We draw original artwork that gives your brand real character. From editorial pieces to website visuals, we create distinct, memorable imagery.' },
+    ],
+  },
+  de: {
+    heroLine1: 'Design von Hand für Marken und digitale Produkte',
+    heroSub: 'MiTi Studio ist eine unabhängige Designpraxis mit Sitz in Baden-Württemberg. Wir bauen skalierbare Design-Systeme, digitale Produkte und Markenidentitäten für wachsende Unternehmen.',
+    ctaStart: 'Schreiben Sie uns',
+    featuresKicker: 'Was wir tun',
+    aiKicker: 'Wie wir arbeiten', aiTitle: 'Erst recherchieren, dann gestalten.',
+    aiCopy: 'Jedes Projekt beginnt mit Fragen zu Ihrer Zielgruppe und Ihrem Markt. Wir skizzieren, wir gestalten, und wir prüfen jede Entscheidung, bis sie trägt. Sie sehen die Begründung dahinter, nicht nur das Ergebnis.',
+    aiImageAlt: 'Eine handgezeichnete Skizze eines Baumes aus der Prozessarbeit des Studios',
+    closeCopy: 'Sagen Sie uns, was Sie brauchen und bis wann. Wir antworten innerhalb von zwei Werktagen.', closeCta: 'Schreiben Sie uns',
+    footerLine: '© 2026 MiTi Studio · Baden-Württemberg, Deutschland',
+    legalImprint: 'Impressum', legalPrivacy: 'Datenschutz',
+    pos: [
+      'Originale Illustration, Artwork und Interfaces, von Hand gestaltet. Design mit Seele, im Studio gezeichnet.',
+      'Strukturierte Design-Systeme mit technischem Blick. Skalierbare UI-Kits und Systeme, fertig für die Produktion.',
+      'Ein unabhängiges Familienstudio, das direkt mit Ihnen arbeitet. Sie sprechen mit der Gründerin, ohne Agentur-Ballast.',
+      'Verwurzelt in Baden-Württemberg, mit internationalem Blick. Wir bringen lokale Unternehmen auf globale Standards.',
+    ],
+    features: [
+      { num: '01', title: 'Markenidentität', copy: 'Wir gestalten vollständige visuelle Identitäten, die Ihr Unternehmen sichtbar machen. Von markanten Logos bis zum Farbsystem entsteht ein stimmiges Bild, das Ihre Zielgruppe erreicht.' },
+      { num: '02', title: 'UX/UI-Produktdesign', copy: 'Wir gestalten klare Interfaces für Web und Mobile, immer aus Sicht der Nutzer. Aus komplexen digitalen Ideen werden aufgeräumte Produkte, in denen man sich sofort zurechtfindet.' },
+      { num: '03', title: 'Design-Systeme', copy: 'Wir bauen wiederverwendbare UI-Bibliotheken und Komponenten für wachsende Teams. Unsere skalierbaren Systeme halten das Bild konsistent und beschleunigen die Entwicklung.' },
+      { num: '04', title: 'Individuelles Schriftdesign', copy: 'Wir entwickeln eigene Schriften, genau auf Ihre Markenstimme abgestimmt. Von der Displayschrift bis zur ganzen Familie, in Retail-Qualität.' },
+      { num: '05', title: 'Individuelle Illustration', copy: 'Wir zeichnen originale Illustrationen, die Ihrer Marke Charakter geben. Von redaktionellen Motiven bis zu Website-Bildern entstehen eigenständige, einprägsame Bilder.' },
+    ],
+  },
+};
+function renderPage(lang) {
+  var t = STR[lang];
+  document.getElementById('t-heroLine1').textContent = t.heroLine1;
+  document.getElementById('t-heroSub').textContent = t.heroSub;
+  document.getElementById('t-ctaStart').textContent = t.ctaStart;
+  document.getElementById('t-featuresKicker').textContent = t.featuresKicker;
+  document.getElementById('t-aiKicker').textContent = t.aiKicker;
+  document.getElementById('t-aiTitle').textContent = t.aiTitle;
+  document.getElementById('t-aiCopy').textContent = t.aiCopy;
+  document.getElementById('t-aiImage').alt = t.aiImageAlt;
+  document.getElementById('t-closeCopy').textContent = t.closeCopy;
+  document.getElementById('t-closeCta').textContent = t.closeCta;
+  document.getElementById('t-legalImprint').textContent = t.legalImprint;
+  document.getElementById('t-legalPrivacy').textContent = t.legalPrivacy;
+  document.getElementById('t-footerLine').textContent = t.footerLine;
+  ['t-pos1','t-pos2','t-pos3','t-pos4'].forEach(function (id, i) { document.getElementById(id).textContent = t.pos[i]; });
+  document.getElementById('features-list').innerHTML = t.features.map(function (f) {
+    return '<div class="tri-row">' +
+      '<p style="font-family:var(--font-secondary); font-weight:600; font-size:14px; letter-spacing:0.06em; margin:0; position:relative;"><span style="position:absolute; left:-20px; top:6px; width:8px; height:8px; background:var(--color-accent);"></span>' + f.num + '</p>' +
+      '<h2 style="font-family:var(--font-heading); font-weight:700; font-size:clamp(20px,2.4cqw,26px); letter-spacing:-0.01em; margin:0;">' + f.title + '</h2>' +
+      '<p style="font-size:15.5px; line-height:1.65; margin:0; max-width:52ch; color:color-mix(in srgb, var(--color-text) 78%, transparent);">' + f.copy + '</p>' +
+      '</div>';
+  }).join('');
+}
+window.__mitiCurrentPage = 'home';
+miti.initNav('home');
+miti.initCookieConsent();
+miti.initLangToggle(renderPage);
+renderPage(miti.getLang());
+</script>
 </body>
 </html>

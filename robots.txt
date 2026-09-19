@@ -1,0 +1,5 @@
+# miti.studio
+User-agent: *
+Allow: /
+
+Sitemap: https://miti.studio/sitemap.xml

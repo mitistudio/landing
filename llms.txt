@@ -1,0 +1,30 @@
+# MiTi Studio
+
+> Family-run boutique design studio in Baden-Württemberg, Germany. Brand identity, product
+> design, design systems, custom type and illustration. We work in English and German,
+> with clients locally and worldwide. Senior work at small studio rates, and you deal
+> directly with the founder.
+
+## What we do
+- Brand identity design: logos, color systems, complete visual identities.
+- UX/UI product design: web and mobile interfaces.
+- Design systems: reusable component libraries and documentation.
+- Custom font design: display faces and full families.
+- Custom illustration: editorial and website artwork.
+
+## Practical
+- Location: Baden-Württemberg, Germany. Remote work worldwide.
+- Languages: English and German.
+- Size: a small family-owned studio. You work with the founder and creative director,
+  with no corporate layers in between.
+- Good fit for: individuals, small studios and businesses who want senior design work
+  without agency overhead.
+- Contact: hello@miti.studio. We answer within two working days.
+
+## Pages
+- https://miti.studio/ : positioning and overview
+- https://miti.studio/services/ : services and how they are packaged
+- https://miti.studio/contact/ : inquiry form and direct contact
+- https://miti.studio/legal/ : Impressum and privacy policy
+
+German versions live under https://miti.studio/de/ with the same paths.
