@@ -23,6 +23,7 @@
     en: { text: 'We use Google Analytics to see which pages people read, so we can improve them.', linkLabel: 'Read more', accept: 'Accept', decline: 'Decline' },
     de: { text: 'Wir nutzen Google Analytics, um zu sehen, welche Seiten gelesen werden, damit wir sie verbessern können.', linkLabel: 'Mehr erfahren', accept: 'Akzeptieren', decline: 'Ablehnen' },
   };
+  var COOKIE_SETTINGS_LABEL = { en: 'Cookie settings', de: 'Cookie-Einstellungen' };
 
   function getLang() { return localStorage.getItem('miti-lang') || 'en'; }
 
@@ -71,13 +72,9 @@
   function initCookieConsent() {
     renderCookieBanner();
     var banner = document.getElementById('cookie-banner');
-    var tab = document.getElementById('cookie-settings-tab');
     var accept = document.getElementById('cookie-accept');
     var decline = document.getElementById('cookie-decline');
-    function showBanner(show) {
-      banner.style.display = show ? 'block' : 'none';
-      tab.style.display = show ? 'none' : 'flex';
-    }
+    function showBanner(show) { banner.style.display = show ? 'block' : 'none'; }
     var choice = localStorage.getItem('miti-consent');
     showBanner(!choice);
     accept.addEventListener('click', function () {
@@ -89,7 +86,9 @@
       localStorage.setItem('miti-consent', 'denied');
       showBanner(false);
     });
-    tab.addEventListener('click', function () { showBanner(true); });
+    window.__mitiOpenCookieSettings = function () { showBanner(true); };
+    var link = document.getElementById('t-cookieSettings');
+    if (link) link.title = link.getAttribute('aria-label') || COOKIE_SETTINGS_LABEL[getLang()];
   }
 
   function initLangToggle(onLangChange) {
@@ -110,6 +109,8 @@
       paint();
       renderNav(window.__mitiCurrentPage);
       renderCookieBanner();
+      var link = document.getElementById('t-cookieSettings');
+      if (link) { link.setAttribute('aria-label', COOKIE_SETTINGS_LABEL[l]); link.title = COOKIE_SETTINGS_LABEL[l]; }
       onLangChange(l);
     }
     enBtn.addEventListener('click', function () { setLang('en'); });
